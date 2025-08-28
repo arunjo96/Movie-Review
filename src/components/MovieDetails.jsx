@@ -1,10 +1,14 @@
-export default function MovieDetails({ movie, onClose }) {
-    if (!movie) return null;
+
+
+import React from 'react'
+
+const MovieDetails = ({ movie, onClose }) => {
+  if (!movie) return null;
     
     const MovieDetailImgURL = "https://via.placeholder.com/300x450"
-
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-20">
+    <>
+       <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-20">
       <div className="bg-white max-w-4xl w-full rounded-lg p-6 relative overflow-y-auto max-h-[90vh]">
         <button
           style={{ cursor: "pointer" }}
@@ -39,5 +43,9 @@ export default function MovieDetails({ movie, onClose }) {
         </div>
       </div>
     </div>
-  );
+    </>
+  )
 }
+
+export default MovieDetails
+

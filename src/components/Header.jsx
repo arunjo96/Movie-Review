@@ -5,7 +5,7 @@ const Header = ({ onSearch, filters, onFilterChange, genres }) => {
     <>
       <header className="p-4 bg-[#e4e4e4]  sticky top-0 z-10">
         <div className="max-w-6xl mx-auto flex flex-col text-center lg:flex-row lg:items-center lg:justify-between gap-3 header_sec">
-          <h1 className="text-lg font-bold text-sky-800">🎬 Movie Reviews</h1>
+          <a href='index.html' className="text-lg font-bold text-sky-800">🎬 Movie Reviews</a>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full sm:w-auto">
             <input
